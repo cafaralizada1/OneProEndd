@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    border-bottom: 1px solid gainsboro;
+
+    nav {
+        width: 80%;
+
+        img {
+            cursor: pointer;
+        }
+
+        .collapseDiv {
+            justify-content: end;
+
+            ul {
+
+                .home {
+                    color: rgb(0, 162, 255);
+                }
+
+                a {
+                    font-weight: 700;
+                    transition: color 0.4s ease;
+                    color: black;
+
+                    &:hover {
+                        color: rgb(0, 162, 255);
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+}
+
+#unit1 {
+    img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        filter: brightness(66%);
+    }
+
+    .unit1Word {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        color: #fff;
+
+        button {
+            padding: 10px 14px;
+            background-color: #26b7e7;
+            color: #fff;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #26b7e7;
+            transition: 0.5s;
+        }
+    }
+}
+
+#unit2All {
+    text-align: center;
+    margin-top: 10%;
+
+    h1 {
+        color: #26b7e7;
+    }
+
+    #unit2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .projectsCard {
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+
+            button {
+                background-color: #26b7e7;
+                padding: 2px;
+            }
+
+            button:hover {
+                background-color: #fff;
+                color: #26b7e7;
+                transition: 0.5s;
+            }
+
+
+        }
+    }
+}
+
+
+
+
+#unit3 {
+    margin-top: 10%;
+    text-align: center;
+    background-color: #EEEEEE;
+
+    .container {
+        .projectsCard {
+            img {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: auto;
+                margin: 10px;
+            }
+
+        }
+    }
+
+    .projectsWord {
+        p {
+            color: gray;
+        }
+    }
+
+    .projectsList {
+
+        flex-direction: column;
+
+        .list {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            .all {
+                color: #40B7E7;
+            }
+        }
+    }
+}
+
+#unit4 {
+    margin-top: 10%;
+    text-align: center;
+
+    p {
+        color: gray;
+    }
+
+    .container {
+        .teamCard {
+            margin-top: 40px;
+
+            img {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                background-color: #26b7e7;
+                padding: 14px;
+                color: #fff;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 6%;
+    background-color: #191919;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
